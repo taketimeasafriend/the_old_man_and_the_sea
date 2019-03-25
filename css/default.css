@@ -21,21 +21,30 @@ canvas {
 }
 
 #leftmenu {
-    position:absolute;
+    position:fixed;
     top:0;
     left:0;
     width:200px;
     height:100%;
-    background-color:#555;
+    background-color:#333;
+    border-right: 2px solid #bbb;
+    border-top: 2px solid #bbb;
+    border-bottom: 2px solid #bbb;
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
+    text-align: center;
+    color: #eee;
+    line-height: 70px;
+    font-weight: 300;
+    font-size: 1.5em;
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 
 #sudoku {
-    margin-left: auto;
-    margin-right: auto;
-    width: 945px;
-    height: 900px;
+    margin-left: 210px;
+    margin-right: 10px;
+    width: auto;
+    height: 2000px;
     background-color: #fff;
     padding: 10px;
     border-radius: 12px;
