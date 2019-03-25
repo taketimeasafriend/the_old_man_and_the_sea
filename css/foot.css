@@ -1,15 +1,15 @@
 .foot {
-    margin-top: 10px;
-    height: 70px;
+    margin-top: 5px;
+    height: 30px;
     bottom: 0px;
     background-color: #333;
     border-top: 1px solid #777;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
+    /*border-top-left-radius: 12px;
+    border-top-right-radius: 12px;*/
     text-align: center;
     color: #eee;
-    line-height: 70px;
-    font-size: 0.9em;
+    line-height: 30px;
+    font-size: 0.8em;
     font-weight: 300;
     font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
