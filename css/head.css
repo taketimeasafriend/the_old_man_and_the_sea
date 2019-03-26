@@ -1,8 +1,9 @@
 .head {
+    margin-left: 200px;
     margin-bottom: 5px;
     height: 70px;
     top: 0px;
-    background-color: #555;
+    background-color: #777;
     border-bottom: 1px solid #bbb;
     /*border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;*/

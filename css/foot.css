@@ -1,8 +1,9 @@
 .foot {
     margin-top: 5px;
+    margin-left: 200px;
     height: 30px;
     bottom: 0px;
-    background-color: #555;
+    background-color: #777;
     border-top: 1px solid #bbb;
     /*border-top-left-radius: 12px;
     border-top-right-radius: 12px;*/
