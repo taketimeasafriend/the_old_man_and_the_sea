@@ -40,7 +40,7 @@ canvas {
     font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 
-#sudoku {
+#maintext {
     margin-left: 210px;
     margin-right: 10px;
     width: auto;
@@ -80,21 +80,10 @@ canvas {
     text-align: center;
 }
 
-#help {
-    top: 60px;
-    font-size: 10px;
-    width: 220px;
-    float: right;
-}
-
 #main {
     top: 60px;
     padding: 10px;
     float: left;
-}
-
-#help li {
-    padding-bottom: 6px;
 }
 
 h2 {
@@ -103,7 +92,8 @@ h2 {
 }
 
 td.help {
-    border-left: 1px dashed #000;
+    border-left: 1px dashed #777;
+    width: 180px;
 }
 
 td.help li {
@@ -112,24 +102,26 @@ td.help li {
 }
 
 .myButton-weixin {
-    background-color: #222;
-    -moz-border-radius: 28px;
-    -webkit-border-radius: 28px;
-    border-radius: 12px;
+    background-color: #ffa;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: 1px solid #ccc;
     display: inline-block;
     cursor: pointer;
-    color: #ffffff;
+    color: #111;
+    text-decoration: none;
     font-family: Arial;
     font-size: 14px;
     padding: 12px;
-    text-decoration: none;
-    width: 150px;
+    width: 14px;
     line-height: 14px;
 }
 
 .myButton-weixin:hover {
-    background-color: #44c767;
-    font-size: 15px;
+    background-color: #ff0;
+    border: 1.2px solid #fc3;
+    color: #000;
 }
 
 .myButton-weixin .weixin_nr {
@@ -137,7 +129,8 @@ td.help li {
     height: 320px;
     padding: 10px;
     border-radius: 10px;
-    background: #000;
+    background: #777;
+    color: #fff;
     text-align: center;
     position: absolute;
     margin: 22px auto;
@@ -149,17 +142,20 @@ td.help li {
     margin-bottom: 5px;
 }
 
-.myButton-weixin .weixin_nr .arrow {
+.myButton-weixin .arrow {
     width: 0;
     height: 0;
-    border-bottom: 10px solid #000;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
+    border-right: 10px solid #ff0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
     position: absolute;
-    left: 50px;
-    top: -10px;
+    left: -10px;
+    top: 160px;
 }
 
 .myButton-weixin.on .weixin_nr {
     display: block;
+    left: 130px;
+    top: 246px;
+    border: 1.2px solid #ffa;
 }

@@ -8,7 +8,7 @@
 	<link href="css/head.css" type="text/css" rel="stylesheet">
 	<link href="css/default.css" type="text/css" rel="stylesheet">
 	<link href="css/foot.css" type="text/css" rel="stylesheet">
-	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/all.css" rel="stylesheet">
 
 	<script src="js/solver.js"></script>
 </head>
@@ -16,412 +16,122 @@
 <body>
 	<!--页头-->
 	<div class="head">
-		<i class="fa fa-sort-numeric-asc" aria-hidden="true"></i> sudoku | 数独在线求解器
+		 <i class="fas fa-anchor"></i> 老人与海 <i class="fas fa-water"></i>
 	</div>
 
-	<div id='sudoku'>
+	<div id="leftmenu">
+		<p>目录</p>
+		<li>第一章</li>
+		<li>第二章</li>
+		<li>第三章</li>
+		<hr style="FILTER: alpha(opacity=100,finishopacity=0,style=2)" width="90%" color=#666 SIZE=2>
+		<li>leftmenu</li>
+		
 		<div class="banner">
-		  <a href="https://github.com/taketimeasafriend/sudoku" target="view_window" class="myButton"><i class="fa fa-github"></i> - Fork on Github - </a>
-			<a href="http://ogudt6aal.bkt.clouddn.com/image/Wechat.png" target="view_window" class="myButton-weixin" onmouseover="this.className = 'myButton-weixin on';" onmouseout="this.className = 'myButton-weixin';">
-				<i class="fa fa-usd"></i>
-				 - 打赏 -
+			<a href="" target="view_window" class="myButton-weixin" onmouseover="this.className = 'myButton-weixin on';" onmouseout="this.className = 'myButton-weixin';">
+				 赏
 				 <div class="weixin_nr">
 					   <div class="arrow"></div>
 						 <img src="images/Wechat.png" width="300" height="300" />
-						 🙏谢谢少侠，有机会请你吃甜筒🍦
+						 谢谢少侠，有机会请你吃甜筒🍦
 				 </div>
 			 </a>
-    </div>
+		</div>
+		
+	</div>
+
+	<div id='maintext'>	
 		<div id='main'>
 			<table>
 				<tr>
 					<td>
-						<br/>
-						<canvas id='canvas1' width='541' height='541'>Canvas is not supported by this browser.</canvas>
-						点击输入:
-						<canvas id='canvas2' width='541' height='55' title="Click here to set the currently selected digit">Canvas is not supported by this browser.</canvas>
-						数独框对应数字文本:
-						<input id='tbSerial' style='width: 538px; background-color: #eee; margin-top: 5px; font-size: 1.0em;' />
-						<br/>
-					</td>
-					<td style="width: 135px">
-						<button onclick="clearGame()" title='清空所有数据(用于新建题目时初始化)'>清空所有</button><br/>
-						<button onclick="loadText()" title='Loads the digits from the textbox below the board in order left to right, top to bottom. Click this after entering a problem to convert them to givens'>载入</button><br/>
-						<button id="btnReset" onclick="reset()" title='清空用户输入的数字(题目不被清空)'>重新答题</button><br/>
-						<button id="btnAccept" onclick="acceptPossibles()" title='填入小的红色提示数字'>填入红色提示数字</button><br/>
-						<button id="btnHint" onclick="hint()" title='填入当前选定单元格(浅红色背景)的正确答案'>解答已选定单元格</button><br/>
-						<button id="btnUndo" onclick="undo()" title='重做上一步(不包括“清空所有”“重新答题”)'>上一步</button><br/>
-						<button id="btnSolve" onclick="solve()" title='显示正确答案(如果题目有解)(程序耗时将显示在右下方)'>看答案</button><br/>
-						<div class="messageout">
-						<input id='chbAllowed' type="checkbox" checked='yes' title='每个单元格显示的小数字即为允许数字'/>
-						显示允许数字
-						<br/><input id='chbShowSingles' type="checkbox" checked='yes' title='每个单元格标示为红色的小数字即为唯一允许的数字' />
-						标示唯一数字
-						<br/>
-						<div id="message" style="margin-top: 50px; width: 120; color: Red;"></div><br/>
-						<div id="extraInfo" style='font-size:0.8em; color: #696969;'></div>
+						<div>
+						<li>One</li>
+						<br><br>
+						He was an old man who fished aline in a skiff in the Gulf Stream and he had gone eighty-four days now without taking a fish. In the first forty days a boy had been with him. But after forty days without a fish the boy's parents had told him that the old man was now definitely and finally salao, which is the worst form of unlucky, and the boy had gone at their orders in another boat which caught three good fish the first week. It made the boy sad to see the old man come in each day with his skiff empty and he always went down to help him carry either the coiled lines or the gaff and harpoon and the sail that was furled around the mast. The sail was patched with floor sacks and, furled, it looked like the flag of permanent defeat.
+<br><br>
+The old man was thin and gaunt with deep wrinkles in the back of his neck. The brown blotches of the benevolent skin cancer the sun brings from its reflection on the tropic sea were on his cheeks. The blotches ran well down the sides of his face and his hands had the deep-creased scars from handling heavy fish on the cords. But none of these scars were fresh. They were as old as erosions in a fishless desert.
+<br><br>
+Everything about him was old except his eyes and they were the same color as the sea and were cheerful and undefeated.
+<br><br>
+"Santiago," the boy said to him as they climbed the bank from where the skiff was hauled up. "I could go with you again. We've made some money."
+<br><br>
+The old man had taught the boy to fish and the boy loved him.
+<br><br>
+"No," the old man said. "You're with a lucky boat. Stay with them."
+<br><br>
+"But remember how you went eighty-seven days without fish and then we caught big ones every day for three weeks."
+<br><br>
+"I remember," the old man said. "I know you did not leave me because you doubted."
+<br><br>
+"It was papa made me leave. I am a boy and I must obey him."
+<br><br>
+"I know," the old man said. "It is quite normal."
+<br><br>
+"He hasn't mush faith."
+<br><br>
+"No," the old man said. "But we have. Haven't we?"
+<br><br>
+"Yes," the boy said. "Can I offer you a beer on the Terrace and then we'll take the stuff home."
+<br><br>
+"Why not?" the old man said. "Between fishmen."
+<br><br>
+They sat on the Terrace and many of the fishmen made fun of the old man and he was not angry. Others, of the older fishmen, looked at him and were sad. But they did not show it and they spoke politely about the current and the depths they had drifted their lines at and the steay good weather and of what they had seen. The successful fishermen of that day were already in and had butchered their marlin out and carried them laid full length across two planks, with two men staggering at the end of each plank, to the fish house where they waited for the ice truck to carry them to the market in Havana. Those who had caught sharks had taken them to the shark factory on the other side of the cove where they were hoisted on a block and tackle, their livers removed, their fins cut off and their hides skinned out and their flesh cut into strips for salting.
+<br><br>
+When the wind was in the east a smell came across the harbour from the shark factory; but today there was only the faint edge of the odour bucause the wind had backed into the north and then dropped off and it was pleasant and sunny on the Terrace.
+<br><br>
+"Santiago," the boy said.
+<br><br>
+"Yes," the old man said. He was holding his glass and thinking of many years ago.
+<br><br>
+"Can I go out to get sardines for you for tomorrow?"
+<br><br>
+"No. Go and play baseball. I can still row and Rogelio will throw the net."
+<br><br>
+"I would like to go. If I can not fish with you. I would like to serve in some way."
+<br><br>
+"You bought me a beer," the old man said. "You are already a man."
+<br><br>
+"How old was I when you first took me in a boat?"
+<br><br>
+"Five and you nearly were killed when I brought the fish in too green and he nearly tore the boat to pieces. Can you remember?"
+<br><br>
+"I can remember the tail slapping and banging and the thwart breaking and the noise of the clubbing. I can remember you throwing me into the bow where the wet coiled lines were and feeling the whole boat shiver and the noise of you clubbing him like chopping a tree down and the sweet blood smell all over me."
+<br><br>
+"Can you really remember that or did I just tell it to you?"
+<br><br>
+"I remember everything from when we first went together."
 						</div>
-					</td>
-					<td class="help">
-						<h2>🔘按钮说明</h2>
-						<ul>
-							<li>“清空所有” - 清空所有数据，用于新建题目时初始化(程序默认给了一道题目)。可以鼠标点击界面单元格输入，或者用键盘方向键配合输入 1 - 9。</li>
-							<li>“载入” - 已经填入的数字将被固定（蓝色标示），点击“重新答题”时数字不会被清空。</li>
-							<li>“重新答题” - 清空用户输入的数字。(题目不被清空)</li>
-							<li>“填入红色提示数字” - 填入小的红色提示数字。</li>
-							<li>“解答已选定单元格” - 填入当前选定单元格(浅红色背景)的正确答案。</li>
-							<li>“上一步” - 重做上一步(不包括“清空所有”和“重新答题”)</li>
-							<li>“看答案” - 显示正确答案(如果题目有解)，程序耗时将显示在右下方。此步可撤销。</li>
-							<li>每个单元格允许填入的数字将以小号灰色标示出。（可勾选是否“显示允许数字”）</li>
-							<li>当每个单元格被允许填入的数字唯一，那么这个数字将红色高亮标示。（可勾选是否“标示唯一数字”）</li>
-							<li>PS: 点击已经输入数字的单元格，所有和此单元格数字相同的单元格都会红色高亮。</li>
 
+					</td>
+
+					<td class="help">
+						<h2><i class="fas fa-lightbulb"></i></h2>
+						<ul>
+							<li>gaunt</li>
+							<li>wrinkles</li>
+							<li>benevolent</li>
+							<li>tropic</li>
+							<li>blotches</li>
+							<li>word</li>
+							<li>word</li>
+							<li>word</li>
+							<li>word</li>
+							<li>word</li>
+							<li>word</li>
 						</ul>
 					</td>
 				</tr>
 			</table>
 
 			<script type="text/javascript">
-				var CellSize = 60;
-				var SubCellSize = 18;
-
-				var canvas1 = document.getElementById("canvas1");
-				var canvas2 = document.getElementById("canvas2");
-				var chbAllowed = document.getElementById("chbAllowed");
-				var chbShowSingles = document.getElementById("chbShowSingles");
-				var tbSerial = document.getElementById("tbSerial");
-				var extraInfo = document.getElementById("extraInfo");
-
-				var board1 = new Board();
-				var selectRow = 0;
-				var selectCol = 0;
-				var showAllowed = true;
-				var showSingles = true;
-				var undoStack = Array();
-
-				function undo() {
-					var tos = undoStack.pop();
-					if (tos) {
-						board1 = tos;
-						updateUI();
-					}
-				}
-
-				function clearUndo() {
-					undoStack = Array();
-				}
-
-				function pushBoard() {
-					undoStack.push(board1.clone());
-				}
-
-				function checkStatus() {
-					extraInfo.innerHTML = "";
-					if (!board1._isValid)
-						message.innerHTML = "输入有误";
-					else if (board1._isSolved)
-						message.innerHTML = "答题完毕";
-					else
-						message.innerHTML = "";
-				}
-
-				function drawGrid() {
-					// Only ever called once!
-					var context = canvas1.getContext('2d');
-					context.strokeStyle = '#c00';
-					for (var i = 0; i <= BoardSize; i++) {
-						context.beginPath();
-						var thick = i % 3 == 0;
-						// Draw vertical lines
-						context.lineWidth = thick ? 2 : 1;
-						context.moveTo(i * CellSize + 0.5, 0.5);
-						context.lineTo(i * CellSize + 0.5, BoardSize * CellSize + 0.5);
-
-						// Draw horizontal lines
-						context.moveTo(0.5, i * CellSize + 0.5);
-						context.lineTo(BoardSize * CellSize + 0.5, i * CellSize + 0.5);
-						context.stroke();
-					}
-				}
-
-				function drawCells() {
-					var context = canvas1.getContext('2d');
-
-					context.font = "12pt Calibri"; // small text
-					context.textAlign = "center";
-					context.textBaseline = "middle";
-					var normalColor = "#aaaaaa";
-					var singleColor = "#ff143c";
-
-					// Draw background for selected cell
-					for (var row = 0; row < BoardSize; row++)
-						for (var col = 0; col < BoardSize; col++) {
-
-							// Draw background of selected cell
-							if (row == selectRow && col == selectCol) {
-								var margin = 2;
-								context.beginPath();
-								context.rect(col * CellSize + margin + 0.5, row * CellSize + margin + 0.5, CellSize - 2 * margin, CellSize - 2 * margin);
-								context.fillStyle = "#ffe4e1";
-								context.fill()
-							}
-						}
-					context.fillStyle = "#999999"; // text color - light
-
-					// Draw allowed values
-					if (showAllowed)
-						for (var row = 0; row < BoardSize; row++)
-							for (var col = 0; col < BoardSize; col++) {
-								var cell = board1.getCell(new Location(row, col));
-								if (!cell.isAssigned()) {
-									var allowedValues = cell._allowed.allowedValuesArray();
-									for (var i = 0; i < allowedValues.length; i++) {
-										var val = allowedValues[i];
-										var x = (col + 0.5) * CellSize; // center of cell for textAlign center, textBaseline middle
-										var y = (row + 0.5) * CellSize;
-										var subRow = Math.floor((val - 1) / 3) - 1;
-										var subCol = Math.floor((val - 1) % 3) - 1;
-										x += subCol * SubCellSize;
-										y += subRow * SubCellSize;
-										var hiddenSingle = allowedValues.length != 1 && val == cell.getAnswer(); // naked single would have only one allowed value
-										context.fillStyle = normalColor; // show hidden single in purple
-										if (showSingles && val == cell.getAnswer())
-											context.fillStyle = singleColor; // show hidden single in purple
-										context.fillText(val, x, y);
-									}
-								}
-							}
-
-					// New if a digit is selected then make all cells with the same digit foreground red
-					var selectCell = board1.getCell(new Location(selectRow, selectCol));
-					var selectValue = selectCell.getValue();
-
-					// Draw values last
-					context.font = "32pt Calibri";
-					context.textAlign = "center";
-					context.textBaseline = "middle";
-					var normalForeColor = "#191929";
-					var sameDigitForeColor = "#F91919";
-					context.fillStyle = normalForeColor; // text color - dark
-					for (var row = 0; row < BoardSize; row++)
-						for (var col = 0; col < BoardSize; col++) {
-							var cell = board1.getCell(new Location(row, col));
-							var x = (col + 0.5) * CellSize; // center of cell for textAlign center, textBaseline middle
-							var y = (row + 0.5) * CellSize;
-							var sameDigit = cell.getValue() == selectValue && selectValue != 0;
-							// Draw value
-							var value = cell.getValue();
-							if (value != 0) {
-								context.fillStyle = cell.isGiven() ? "#2200aa" : "#696969"; // show "givens" in a darker color
-								if (sameDigit) // then override
-									context.fillStyle = sameDigitForeColor; // text color - dark
-								context.fillText(value, x, y);
-							}
-						}
-				}
-
-				function drawCanvas() {
-					canvas1.width = canvas1.width;
-					drawGrid();
-					drawCells();
-				}
-
-				function updateUI() {
-					drawCanvas();
-					checkStatus();
-					tbSerial.value = board1.toString();
-				}
-
-				function readOptions() {
-					showAllowed = chbAllowed.checked;
-					showSingles = chbShowSingles.checked;
-					drawCanvas();
-				}
-
-				chbAllowed.onclick = readOptions;
-				chbShowSingles.onclick = readOptions;
-
-				function selectCell(row, col) {
-					selectRow = row;
-					selectCol = col;
-					drawCanvas();
-				}
-
-				function moveSelection(row, col) {
-					selectRow += row;
-					selectCol += col;
-					if (selectRow < 0)
-						selectRow = 8;
-					else if (selectRow > 8)
-						selectRow = 0;
-					if (selectCol < 0)
-						selectCol = 8;
-					else if (selectCol > 8)
-						selectCol = 0;
-					drawCanvas();
-				}
-
-				function setDigitInCell(digit) {
-					var cell = board1.getCell(new Location(selectRow, selectCol));
-					message.innerHTML = "";
-					if (cell.isGiven())
-						return;
-					if (digit != 0 && !cell.isAllowed(digit)) {
-						message.innerHTML = "输入有误";
-						return;
-					}
-					pushBoard();
-					cell.setValue(digit);
-					board1.updateAllowed();
-					updateUI();
-				}
-
-				canvas1.onmousedown = function canvasMouseDown(ev) {
-					var x = ev.pageX - this.offsetLeft;
-					var y = ev.pageY - this.offsetTop;
-					var coords = this.relMouseCoords(ev);
-					selectCell(Math.floor(coords.y / CellSize), Math.floor(coords.x / CellSize));
-				}
-
-				document.onkeydown = function(ev) {
-					switch (ev.keyCode) {
-						case 37: // left arrow
-							moveSelection(0, -1);
-							break;
-						case 38: // up arrow
-							moveSelection(-1, 0);
-							break;
-						case 39: // right arrow
-							moveSelection(0, 1);
-							break;
-						case 40: // down arrow
-							moveSelection(1, 0);
-							break;
-						default:
-							var key = Number(ev.keyCode);
-							var digit = key >= 96 ? key - 96 : key - 48; // handle keypad digits as well
-							if (digit >= 0 && digit <= 9)
-								setDigitInCell(digit);
-							break;
-					}
-				}
-
-				function loadText() {
-					var ret = board1.setString(tbSerial.value);
-					updateUI();
-					if (!ret)
-						message.innerHTML = "不是81个数字";
-				}
-
-				function clearGame() {
-					clearUndo();
-					board1.clear();
-					updateUI();
-				}
-
-				function acceptPossibles() {
-					pushBoard();
-					board1.acceptPossibles();
-					board1.updateAllowed();
-					updateUI();
-				}
-
-				function hint() {
-					// First check if we had calculated a solution, if not do so now
-					solution = board1.clone();
-					if (solution.trySolve(Location.empty, 0)) {
-						// There is a solution to the board from its current state
-						var cell = solution.getCell(new Location(selectRow, selectCol));
-						if (!cell.isGiven())
-							setDigitInCell(cell.getValue());
-					}
-				}
-
-				function reset() {
-					clearUndo();
-					board1.reset();
-					updateUI();
-				}
-
-				function solve() {
-					pushBoard();
-					var n = new Date(); // Grab new copy of date
-					var s = n.getTime(); // Grab current millisecond #
-					board1.trySolve(Location.empty, 0);
-					var diff = new Date().getTime() - s;
-					updateUI();
-					extraInfo.innerHTML = "解题耗时:" + String(diff) + "毫秒";
-				}
-
-				//http://magictour.free.fr/sudoku.htm for list of hard Sudoku puzzles
-				// http://www.sudokuwiki.org/sudoku.htm good on-line solver accepting serial format
-				//board1.setString("7.8...3.....2.1...5.........4.....263...8.......1...9..9.6....4....7.5..........."); //very hard
-				board1.setString("7.8...3.....2.1...5..7..2...4.....263.948...7...1...9..9.6....4....7.5....5......"); // medium
-				updateUI();
-				var digCellSize = 54;
-
-				// New stuff - draw a digit selector in canvas above board
-				function initDigitSource() {
-					// Only ever called once!
-					var context = canvas2.getContext('2d');
-					context.strokeStyle = '#070';
-					var SourceSize = BoardSize + 1;
-					for (var i = 0; i <= SourceSize; i++) {
-						context.beginPath();
-						// Draw vertical lines
-						context.lineWidth = 1;
-						context.moveTo(i * digCellSize + 0.5, 0.5);
-						context.lineTo(i * digCellSize + 0.5, digCellSize + 0.5);
-						context.stroke();
-					}
-					for (var i = 0; i <= 1; i++) {
-						context.beginPath();
-						// Draw horizontal lines
-						context.lineWidth = 1;
-						context.moveTo(0.5, i * digCellSize + 0.5);
-						context.lineTo(SourceSize * digCellSize + 0.5, i * digCellSize + 0.5);
-						context.stroke();
-					}
-					context.font = "24pt Calibri";
-					context.textAlign = "center";
-					context.textBaseline = "middle";
-					var normalForeColor = "#708090";
-					context.fillStyle = normalForeColor; // text color - dark
-					for (var col = 0; col < SourceSize; col++) {
-						var x = (col + 0.5) * digCellSize; // center of cell for textAlign center, textBaseline middle
-						var y = 0.5 * digCellSize;
-						var value = col < 9 ? col + 1 : "X";
-						context.fillStyle = normalForeColor; // show "givens" in a darker color
-						context.fillText(value, x, y);
-					}
-
-				}
-				initDigitSource();
-
-				canvas2.onmousedown = function canvasMouseDown(ev) {
-					var x = ev.pageX - this.offsetLeft;
-					var y = ev.pageY - this.offsetTop;
-					var coords = this.relMouseCoords(ev);
-					var dig = Math.floor(coords.x / digCellSize) + 1;
-					if (dig == 10)
-						dig = 0;
-					setDigitInCell(dig);
-				}
 			</script>
 		</div>
 
 	</div>
 	<!--页脚-->
 	<div class="foot">
-		<a href="http://51world.win" target="view_window"><i class="fa fa-home"></i>主页</a>
-		 -
-		<a href="https://github.com/taketimeasafriend" target="view_window"><i class="fa fa-github"></i>Github</a>
-		 -
-		<a href="http://weibo.com/miaoxiaogege" target="view_window"><i class="fa fa-weibo"></i>微博</a>
-		 -
-		<a href="http://ogudt6aal.bkt.clouddn.com/image/whynotwangwei.jpeg" target="view_window"><i class="fa fa-weixin"></i>微信</a>
-		 -
-		<a href="mailto:taketimeasafriend@gmail.com?subject=I%20want%20to%20say%20&body=Hello%20"><i class="fa fa-envelope"></i>邮箱</a>
+		Copyright © 2019 欧内斯特 · 米勒尔 · 海明威
 	</div>
 </body>
 
