@@ -45,6 +45,16 @@ button {
     font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 
+#content {
+    font-size: 1.3em;
+    color: #fff;
+}
+
+#historyview {
+    font-size: 0.76em;
+    color: #6f6;
+}
+
 #maintext {
     margin-left: 210px;
     margin-right: 10px;
