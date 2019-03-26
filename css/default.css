@@ -5,6 +5,17 @@ body {
     margin: auto;
 }
 
+#tooltip{
+    position:absolute;
+    width:100px;
+    border:1px solid #333;
+    border-radius: 5px;
+    background:#f7f5d1;
+    padding:6px 8px;
+    color:#000;
+    display:none;
+}
+
 button {
     width: 130px;
     height: 30px;
@@ -12,12 +23,6 @@ button {
     border-radius: 5px;
     background-color: #eee;
     font-size: 0.9em;
-}
-
-canvas {
-    background-color: #fff;
-    padding-bottom: 10px;
-    display: block;
 }
 
 #leftmenu {
@@ -48,6 +53,10 @@ canvas {
     background-color: #fff;
     padding: 10px;
     border-radius: 12px;
+}
+
+.passages {
+	padding: 20px;
 }
 
 .banner {
@@ -81,8 +90,8 @@ canvas {
 }
 
 #main {
-    top: 60px;
-    padding: 10px;
+    top: 40px;
+    padding: 30px;
     float: left;
 }
 

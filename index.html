@@ -10,7 +10,7 @@
 	<link href="css/foot.css" type="text/css" rel="stylesheet">
 	<link href="css/all.css" rel="stylesheet">
 
-	<script src="js/solver.js"></script>
+	<script src="js/jquery.js"></script>
 </head>
 
 <body>
@@ -24,11 +24,14 @@
 		<li>第一章</li>
 		<li>第二章</li>
 		<li>第三章</li>
+		
 		<hr style="FILTER: alpha(opacity=100,finishopacity=0,style=2)" width="90%" color=#666 SIZE=2>
-		<li>leftmenu</li>
+		
+		<p>历史访问次数</p>
+		<div align="center"><a href="http://www.amazingcounters.com"><img border="0" src="http://cc.amazingcounters.com/counter.php?i=3230484&c=9691765" alt="AmazingCounters.com"></a></div>
 		
 		<div class="banner">
-			<a href="" target="view_window" class="myButton-weixin" onmouseover="this.className = 'myButton-weixin on';" onmouseout="this.className = 'myButton-weixin';">
+			<a href="javascript:;" target="view_window" class="myButton-weixin" onmouseover="this.className = 'myButton-weixin on';" onmouseout="this.className = 'myButton-weixin';">
 				 赏
 				 <div class="weixin_nr">
 					   <div class="arrow"></div>
@@ -37,7 +40,7 @@
 				 </div>
 			 </a>
 		</div>
-		
+
 	</div>
 
 	<div id='maintext'>	
@@ -45,7 +48,7 @@
 			<table>
 				<tr>
 					<td>
-						<div>
+						<div class="passages">
 						<li>One</li>
 						<br><br>
 						He was an old man who fished aline in a skiff in the Gulf Stream and he had gone eighty-four days now without taking a fish. In the first forty days a boy had been with him. But after forty days without a fish the boy's parents had told him that the old man was now definitely and finally salao, which is the worst form of unlucky, and the boy had gone at their orders in another boat which caught three good fish the first week. It made the boy sad to see the old man come in each day with his skiff empty and he always went down to help him carry either the coiled lines or the gaff and harpoon and the sail that was furled around the mast. The sail was patched with floor sacks and, furled, it looked like the flag of permanent defeat.
@@ -100,7 +103,12 @@ When the wind was in the east a smell came across the harbour from the shark fac
 <br><br>
 "Can you really remember that or did I just tell it to you?"
 <br><br>
+
+<a href="javascript:;" class="tooltip" title="adj. 哈哈哈的 n.哈哈哈">3s</a>
+<br><br>
 "I remember everything from when we first went together."
+<br><br>
+<a href="javascript:;">next -></a>
 						</div>
 
 					</td>
@@ -125,6 +133,26 @@ When the wind was in the east a smell came across the harbour from the shark fac
 			</table>
 
 			<script type="text/javascript">
+				var x = 10;
+				var y = 20;
+				var newtitle = '';
+				$('a.tooltip').mouseover(function(e) {
+					newtitle = this.title;
+					this.title = '';
+					$('body').append('<div id="tooltip">' + newtitle + '</div>');
+					$('#tooltip').css({
+						'left': (e.pageX + x + 'px'),
+						'top': (e.pageY + y + 'px')
+					}).show();
+				}).mouseout(function() {
+					this.title = newtitle;
+					$('#tooltip').remove();
+				}).mousemove(function(e) {
+					$('#tooltip').css({
+						'left': (e.pageX + x + 'px'),
+						'top': (e.pageY + y + 'px')
+					}).show();
+				})
 			</script>
 		</div>
 
