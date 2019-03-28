@@ -12,7 +12,7 @@
 	<link href="css/to-top.css" type="text/css" rel="stylesheet">
 
 	<script src="js/jquery.js"></script>
-	<script src="js/to-top.js"></script>
+
 </head>
 
 <body>
@@ -137,10 +137,7 @@ When the wind was in the east a smell came across the harbour from the shark fac
 				</tr>
 			</table>
 
-			<div style="display: none;" id="rocket-to-top">
-				<div style="opacity:0;display: block;" class="level-2"></div>
-				<div class="level-3"></div>
-			</div>
+			<div onclick="topFunction()" id="toTop" title="back to top"><img src="images/totop.png" width="122" height="122" /></div>
 
 			<script type="text/javascript">
 				var x = 10;
@@ -163,6 +160,19 @@ When the wind was in the east a smell came across the harbour from the shark fac
 						'top': (e.pageY + y + 'px')
 					}).show();
 				})
+
+				window.onscroll = function() {scrollFunction()};
+				function scrollFunction() {console.log(121);
+				    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				        document.getElementById("toTop").style.display = "block";
+				    } else {
+				        document.getElementById("toTop").style.display = "none";
+				    }
+				}
+				function topFunction() {
+				    document.body.scrollTop = 0;
+				    document.documentElement.scrollTop = 0;
+				}
 			</script>
 		</div>
 
