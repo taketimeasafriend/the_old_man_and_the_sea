@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="zh">
+
+<head>
+	<meta charset="UTF-8">
+	<title>时间的朋友|老人与海</title>
+	<link href="images/favicon_books.ico" rel="shortcut icon">
+	<link href="css/head.css" type="text/css" rel="stylesheet">
+	<link href="css/default.css" type="text/css" rel="stylesheet">
+	<link href="css/foot.css" type="text/css" rel="stylesheet">
+	<link href="css/all.css" rel="stylesheet">
+	<link href="css/to-top.css" type="text/css" rel="stylesheet">
+
+	<script src="js/jquery.js"></script>
+
+</head>
+
+<body>
+	<!--页头-->
+	<div class="head">
+		The Old Man and The Sea&nbsp;&nbsp;&nbsp;
+		<i class="fas fa-water"></i><i class="fas fa-anchor"></i><i class="fas fa-water"></i><i class="fas fa-water"></i><i class="fas fa-water"></i>
+	</div>
+
+	<div id="leftmenu">
+		<p id="content">Content</p>
+		<li>Chapter1</li>
+		<li>Chapter2</li>
+		<li>Chapter3</li>
+		<li>Chapter4</li>
+		<li>Chapter5</li>
+		<br>
+		<hr style="border:1px dashed #aaa; height:1px">
+		<div id="author_and_readers_views">
+			<div id="author_and_readers">
+				<p><a href="javascript:;">About Author</a></p>
+				<p><a href="javascript:;">From Readers</a></p>
+			</div>
+			<p>历史访问次数:
+				<img style="display: inline-block; vertical-align: middle;" src="http://cc.amazingcounters.com/counter.php?i=3230484&c=9691765" alt="waiting...">
+			</p>
+		</div>
+
+		<div class="banner">
+			<a href="javascript:;" target="view_window" class="myButton-weixin" onmouseover="this.className = 'myButton-weixin on';" onmouseout="this.className = 'myButton-weixin';">
+				 赏
+				 <div class="weixin_nr">
+					   <div class="arrow"></div>
+						 <img src="images/Wechat.png" width="300" height="300" />
+						 谢谢少侠，有机会请你吃甜筒🍦
+				 </div>
+			 </a>
+		</div>
+	</div>
+
+	<div id='maintext'>
+		<table>
+			<tr>
+				<td>
+					<div class="passages">
+						<h2>Chapter 2</h2>
+						<br><br> Sometimes someone would speak in a boat. But most of the boats were silent except for the dip of the oars. They spread apart after they were out of the mouth of the harbour and each one headed for the part of the ocean where he hoped to
+						find fish. The old man knew he was going far out and he left the smell of the land behind and rowed out into the clean early morning smell of the ocean. He saw the phosphorescence of the Gulf weed in the water as he rowed over the part of the ocean
+						that the fishermen called the great well because there was a sudden deep of seven hundred fathoms where all sorts of fish congregated because of the swirl the current made against the steep walls of the floor of the ocean. Here there were concentrations
+						of shrimp and bait fish and sometimes schools of squid in the deepest holes and these rose close to the surface at night where all the wandering fish fed on them.
+						<br><br>
+
+						<a href="javascript:;" class="tooltip" title="adj. 哈哈哈的 n.哈哈哈">hahaha</a> ttttt
+						<br><br>
+						<br><br>
+
+						<hr width=90%>
+						<div id="previouschapter">
+							<a href="index.html">
+									<i class="fas fa-arrow-left"></i>&nbsp;Previous Chapter
+								</a>
+						</div>
+						<div id="nextchapter">
+							<a href="chapter03.html">
+									Next Chapter&nbsp;<i class="fas fa-arrow-right"></i>
+								</a>
+						</div>
+
+					</div>
+				</td>
+
+				<td class="help">
+					<h2><img src="images/ideas.png"/></i></h2>
+					<hr style="border:1px dashed #aaa; height:1px" width=80%>
+					<ul>
+						<li>gaunt</li>
+						<li>wrinkles</li>
+						<li>benevolent</li>
+						<li>tropic</li>
+						<li>blotches</li>
+						<li>word</li>
+						<li>word</li>
+						<li>word</li>
+						<li>word</li>
+						<li>word</li>
+						<li>word</li>
+					</ul>
+				</td>
+
+			</tr>
+		</table>
+
+		<div onclick="topFunction()" id="toTop" title="back to top"><img src="images/totop.png" width="122" height="122" /></div>
+	</div>
+
+	<script type="text/javascript">
+		var x = 10;
+		var y = 20;
+		var newtitle = '';
+		$('a.tooltip').mouseover(function(e) {
+			newtitle = this.title;
+			this.title = '';
+			$('body').append('<div id="tooltip">' + newtitle + '</div>');
+			$('#tooltip').css({
+				'left': (e.pageX + x + 'px'),
+				'top': (e.pageY + y + 'px')
+			}).show();
+		}).mouseout(function() {
+			this.title = newtitle;
+			$('#tooltip').remove();
+		}).mousemove(function(e) {
+			$('#tooltip').css({
+				'left': (e.pageX + x + 'px'),
+				'top': (e.pageY + y + 'px')
+			}).show();
+		})
+
+		window.onscroll = function() {
+			scrollFunction()
+		};
+
+		function scrollFunction() {
+			console.log(121);
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				document.getElementById("toTop").style.display = "block";
+			} else {
+				document.getElementById("toTop").style.display = "none";
+			}
+		}
+
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
+
+	<!--页脚-->
+	<div class="foot">
+		Copyright © 2019 欧内斯特 · 米勒尔 · 海明威
+	</div>
+</body>
+
+</html>

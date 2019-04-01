@@ -39,7 +39,7 @@ button {
     border-bottom-right-radius: 12px;
     text-align: center;
     color: #eee;
-    line-height: 70px;
+    line-height: 50px;
     font-weight: 300;
     font-size: 1.2em;
     font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
@@ -51,18 +51,30 @@ button {
     font-weight: bold;
 }
 
-#historyview {
+#author_and_readers_views {
+	margin-top: 30px;
     font-size: 0.76em;
     color: #6f6;
+    line-height: 30px;
+}
+
+#author_and_readers {
+    color: #fff;
+}
+
+#author_and_readers a{
+    color: #fff;
+    text-decoration:none;
 }
 
 #maintext {
     margin-left: 210px;
     margin-right: 5px;
+    padding: 30px;
     width: auto;
-    height:3500px;
+    min-width: 800px;
+    height:auto;
     background-color: #fff;
-    padding: 10px;
     border-radius: 12px;
 }
 
@@ -100,20 +112,21 @@ button {
     text-align: center;
 }
 
-#main {
-    top: 40px;
-    padding: 30px;
-    float: left;
-}
-
 h2 {
     color: #444;
     text-align: center;
 }
 
-#nextchapter{
-    text-align: center;
+#previouschapter{
+    float: left;
     margin-top: 20px;
+    display: inline;
+}
+
+#nextchapter{
+    float: right;
+    margin-top: 20px;
+    display: inline;
 }
 
 td.help {
@@ -183,6 +196,6 @@ td.help li {
 .myButton-weixin.on .weixin_nr {
     display: block;
     left: 130px;
-    top: 246px;
+    top: 400px;
     border: 1.2px solid #ffa;
 }
