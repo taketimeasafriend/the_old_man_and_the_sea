@@ -44,10 +44,20 @@ button {
     font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 
-#content {
+#content1 {
     font-size: 1.3em;
     color: #fff;
     font-weight: bold;
+}
+
+#content2 {
+    line-height: 20px;
+    font-size: 0.85em;
+}
+
+#content2 a{
+    color: #fff;
+    text-decoration:none;
 }
 
 #chapters a{
@@ -84,6 +94,13 @@ button {
 
 .passages {
 	padding: 20px;
+  line-height: 160%;
+}
+
+.passages .images{
+	width: 100%;
+  margin: auto;
+  border-radius: 12px;
 }
 
 .banner {
@@ -200,6 +217,6 @@ td.help li {
 .myButton-weixin.on .weixin_nr {
     display: block;
     left: 130px;
-    top: 400px;
+    top: 475px;
     border: 1.2px solid #ffa;
 }
