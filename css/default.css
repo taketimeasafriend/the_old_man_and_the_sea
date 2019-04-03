@@ -92,15 +92,21 @@ button {
     border-radius: 12px;
 }
 
+#maintext .images{
+	width: 100%;
+  max-width: 600px;
+  border-radius: 12px;
+}
+
+#maintext .images-author{
+	width: 100%;
+  max-width: 300px;
+  border-radius: 12px;
+}
+
 .passages {
 	padding: 20px;
   line-height: 160%;
-}
-
-.passages .images{
-	width: 100%;
-  margin: auto;
-  border-radius: 12px;
 }
 
 .banner {

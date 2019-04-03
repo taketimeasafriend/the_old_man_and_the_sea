@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="zh">
+
+<head>
+	<meta charset="UTF-8">
+	<title>时间的朋友|老人与海</title>
+	<link href="images/favicon_books.ico" rel="shortcut icon">
+	<link href="css/head.css" type="text/css" rel="stylesheet">
+	<link href="css/default.css" type="text/css" rel="stylesheet">
+	<link href="css/foot.css" type="text/css" rel="stylesheet">
+	<link href="css/all.css" rel="stylesheet">
+	<link href="css/to-top.css" type="text/css" rel="stylesheet">
+
+	<script src="js/jquery.js"></script>
+
+</head>
+
+<body>
+	<!--页头-->
+	<div class="head">
+		The Old Man and The Sea
+		<!--&nbsp;&nbsp;&nbsp;
+		<i class="fas fa-water"></i><i class="fas fa-anchor"></i><i class="fas fa-water"></i><i class="fas fa-water"></i><i class="fas fa-water"></i>-->
+	</div>
+
+	<div id="leftmenu">
+		<p id="content1">Content</p>
+		<div id="chapters">
+			<li><a href="index.html">Chapter1</a></li>
+			<li><a href="chapter02.html">Chapter2</a></li>
+			<li><a href="chapter03.html">Chapter3</a></li>
+			<li><a href="chapter04.html">Chapter4</a></li>
+			<li><a href="chapter05.html">Chapter5</a></li>
+		</div>
+		<p id="content2">
+			<a href="javascript:;">[&nbsp;Author&nbsp;]</a>
+		</p>
+		<p id="content2">
+			<a href="javascript:;">[&nbsp;Gallery&nbsp;]</a>
+		</p>
+		<p id="content2">
+			<a href="javascript:;">[&nbsp;Videos&nbsp;]</a>
+		</p>
+		<br>
+		<hr style="border:1px dashed #aaa; height:1px">
+		<div id="author_and_readers_views">
+			<div id="author_and_readers">
+				<p><a href="javascript:;">From Readers</a></p>
+			</div>
+			<p>历史访问次数:
+				<img style="display: inline-block; vertical-align: middle;" src="http://cc.amazingcounters.com/counter.php?i=3230484&c=9691765" alt="waiting...">
+			</p>
+		</div>
+
+		<div class="banner">
+			<a href="javascript:;" target="view_window" class="myButton-weixin" onmouseover="this.className = 'myButton-weixin on';" onmouseout="this.className = 'myButton-weixin';">
+				 赏
+				 <div class="weixin_nr">
+					   <div class="arrow"></div>
+						 <img src="images/Wechat.png" width="300" height="300" />
+						 谢谢少侠，有机会请你吃甜筒🍦
+				 </div>
+			 </a>
+		</div>
+	</div>
+
+	<div id='maintext'>
+		<table>
+			<tr>
+				<th>
+					<img class="images" src="images/chapter102.jpg" />
+				</th>
+			</tr>
+			<tr>
+				<th>
+					<h2>Chapter 2</h2>
+				</th>
+			</tr>
+			<tr>
+				<td>
+					<div class="passages">
+						<br><img src="images/S.png" />omehought. Eat them, fish. Eat them. Please eat them. How fresh they are and you down there six hundred feet in that cold water in the dark. Make another turn in the dark and come back and eat them. He felt the light
+						delicate pulling and then a harder pull when a sardine's head must have been more difficult to break from the hook. Then there was nothing.
+						<br><br>
+						<br><br>
+
+						<hr width=90%>
+						<div id="previouschapter">
+							<a href="chapter02.html">
+									<i class="fas fa-arrow-left"></i>&nbsp;Previous Chapter
+								</a>
+						</div>
+						<div id="nextchapter">
+							<a href="chapter04.html">
+									Next Chapter&nbsp;<i class="fas fa-arrow-right"></i>
+								</a>
+						</div>
+
+					</div>
+				</td>
+
+				<td class="help">
+					<h2><img src="images/ideas.png"/></h2>
+					<hr style="border:1px dashed #aaa; height:1px" width=80%>
+					<ul>
+						<li>gaunt</li>
+						<li>wrinkles</li>
+						<li>benevolent</li>
+						<li>tropic</li>
+						<li>blotches</li>
+						<li>word</li>
+						<li>word</li>
+						<li>word</li>
+						<li>word</li>
+						<li>word</li>
+						<li>word</li>
+					</ul>
+				</td>
+
+			</tr>
+		</table>
+
+		<div onclick="topFunction()" id="toTop" title="back to top"><img src="images/top.png" width="122" height="122" /></div>
+	</div>
+
+	<script type="text/javascript">
+		var x = 10;
+		var y = 20;
+		var newtitle = '';
+		$('a.tooltip').mouseover(function(e) {
+			newtitle = this.title;
+			this.title = '';
+			$('body').append('<div id="tooltip">' + newtitle + '</div>');
+			$('#tooltip').css({
+				'left': (e.pageX + x + 'px'),
+				'top': (e.pageY + y + 'px')
+			}).show();
+		}).mouseout(function() {
+			this.title = newtitle;
+			$('#tooltip').remove();
+		}).mousemove(function(e) {
+			$('#tooltip').css({
+				'left': (e.pageX + x + 'px'),
+				'top': (e.pageY + y + 'px')
+			}).show();
+		})
+
+		window.onscroll = function() {
+			scrollFunction()
+		};
+
+		function scrollFunction() {
+			console.log(121);
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				document.getElementById("toTop").style.display = "block";
+			} else {
+				document.getElementById("toTop").style.display = "none";
+			}
+		}
+
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
+
+	<!--页脚-->
+	<div class="foot">
+		Copyright © 2019 欧内斯特 · 米勒尔 · 海明威
+	</div>
+</body>
+
+</html>
