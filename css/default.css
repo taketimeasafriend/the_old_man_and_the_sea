@@ -100,8 +100,7 @@ button {
 }
 
 #maintext .images-author{
-	width: 100%;
-  max-width: 300px;
+  max-width: 600px;
   border-radius: 12px;
 }
 
