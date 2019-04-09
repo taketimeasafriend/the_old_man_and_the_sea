@@ -60,6 +60,10 @@ button {
     text-decoration:none;
 }
 
+#chapters {
+    padding: 0em 2em 0em 3.5em;
+}
+
 #chapters a{
     color: #fff;
     text-decoration:none;
